@@ -981,6 +981,11 @@
 		width:10%;
 	}
 
+	.sec01_left .logo{
+		width:80%;
+		overflow: auto;
+	}
+	
 	.section_04 .news .news_01{
 		max-width:100%;
 		height:auto;
