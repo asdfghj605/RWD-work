@@ -4,6 +4,7 @@
 
 <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
 <![endif]-->
 
 <meta charset="UTF-8">
@@ -14,13 +15,15 @@
 <script src="js/menu.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 
+
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/computer.css">
 
 <script>
 
 	$(function() {
-    $('.nav_word').bind('click', function(event) {
+    $('.nav li a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -36,23 +39,21 @@
 
 <!-- 第一排-->
 <div class="section_01" id="about">
-	
-	
 
-	<div class="nav">
+<div class="menu">
 
-	<a href="#" class="ham"><img src="images/navbar_icon.png" width="12%"></a>
+		<a href="#" class="ham"><img src="images/navbar_icon.png" width="12%"></a>
 
-		<div class="menu">
-	
-			<div class="nav_word" id="scroll" href="#about"><a>ABOUT</a></div>
-			<div class="nav_word" id="scroll" href="#work"><a>OUR WORKS</a></div>
-			<div class="nav_word" id="scroll" href="#concern"><a>WE CONCERNED</a></div>
-			<div class="nav_word" id="scroll" href="#news"><a>NEWS</a></div>
-			<div class="nav_word" id="scroll" href="#join"><a>JOIN US</a></div>
-		</div>	
-			<!-- 尋覽列圖示 -->
-	</div>	
+		<ul class="nav nav-justified">
+		
+			<li><a id="scroll" href="#about">ABOUT</a></li>
+			<li><a id="scroll" href="#work">WORK</a></li>
+			<li><a id="scroll" href="#concern">CONCERNED</a></li>
+			<li><a id="scroll" href="#news">NEWS</a></li>
+			<li><a id="scroll" href="#join">JOIN US</a></li>
+
+		</ul>
+</div>
 
 
 	<div class="sec01_left">
@@ -71,40 +72,49 @@
 
 <!-- 第二排 -->
 
+
 <div class="section_02" id="work">
 	<div class="sec02_title">OUR WORKS</div>
 	<div class="work">
-		<ul>
-			<li>
+		<div class="row">
+			<div class="col-sm-4">
 				<a href="#">
-				<img src="images/join/join_01.jpg"></a>
+					<img src="images/join/join_01.jpg">
+				</a>
 
-				<div class="work_title"><a href="#">LOOK AFTER THE ANIMAILS</a></div>
+				<div class="work_title">
+					<a href="#">LOOK AFTER THE ANIMAILS</a>
+				</div>
 
 				<p><a href="#">There are several animals hurt by hunters or conflict with other animals, they need our heal to bring back to health. We also need to take care of minority which lose their parents.</a></p>
-				
-			</li>
+			</div>
 
-			<li>
+			<div class="col-sm-4">
 				<a href="#">
-				<img src="images/join/join_02.jpg"></a>
+					<img src="images/join/join_02.jpg">
+				</a>
 
-				<div class="work_title"><a href="#">FUNDS US</a></div>
+				<div class="work_title">
+					<a href="#">FUNDS US</a>
+				</div>
 
 				<p><a href="#">We are non-profit organization, we need funds and vets to save the animals, so send e-mail to someone or some organizations that have conscious to help animals is one thing what we do.</a></p>
-				
-			</li>
+			</div>
 
-			<li>
+
+
+			<div class="col-sm-4">
 				<a href="#">
-				<img src="images/join/join_03.jpg"></a>
+					<img src="images/join/join_03.jpg">
+				</a>
 
-				<div class="work_title"><a href="#">PROTECT US</a></div>
+				<div class="work_title">
+					<a href="#">PROTECT THE ANIMAILS</a>
+				</div>
 
 				<p><a href="#">Because the hunters are extremely rampant so many years in africa, the quantity of the endangered animals are still decrease every years.We hired mercenarys to protect these animals.</a></p>
-			
-			</li>
-		</ul>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -118,37 +128,41 @@
 		<div class="sec03_title">WE CONCERNED</div>
 
 			<div class="animal">
-				<ul class="animal_01">
-					<li>
+
+				<div class="row">
+					<div class="col-sm-4">
 						<img src="images/elephant.png">
-						<p>ELEPHANT</p>
-						<p class="qu">Quantity: 14,400</p>
-					</li>
-					<li>
+						<h4>ELEPHANT</h4>
+						<h5>Quantity: 17,000</h5>
+					</div>
+
+					<div class="col-sm-4">
 						<img src="images/giraffe.png">
-						<p>GIRAFFE</p>
-						<p class="qu">Quantity: 80,000</p>
-					</li>
-					<li>
+						<h4>ELEPHANT</h4>
+						<h5>Quantity: 17,000</h5>
+					</div>
+
+					<div class="col-sm-4">
 						<img src="images/leopard.png">
-						<p>LEOPARD</p>
-						<p class="qu">Quantity: 70,000</p>
-					</li>
-				</ul>
+						<h4>ELEPHANT</h4>
+						<h5>Quantity: 17,000</h5>
+					</div>
+				</div>
 
-				<ul class="animal_02">
-					<li>
+
+				<div class="row">
+					<div class="col-sm-6">
 						<img src="images/rhinoceros.png">
-						<p>RHINOCERO</p>
-						<p class="qu">Quantity: 17,000</p>
-					</li>
-					<li>
-						<img src="images/gazella.png">
-						<p>GAZELLA</p>
-						<p class="qu">Quantity: 80,000</p>
-					</li>
-				</ul>
+						<h4>ELEPHANT</h4>
+						<h5>Quantity: 17,000</h5>
+					</div>
 
+					<div class="col-sm-6">
+						<img src="images/gazella.png">
+						<h4>ELEPHANT</h4>
+						<h5>Quantity: 17,000</h5>
+					</div>
+				</div>
 		</div>
 </div>
 
@@ -218,13 +232,15 @@
 <!-- 第五排 -->
 <div class="section_05" id="join">
 	<div class="donation">
+
 		<div class="donate_word">
 			HELP &nbsp;THESE &nbsp;ENDANGERED &nbsp;ANIMALS
 		</div>
 
 		<div class="donate_button">
 			DONATE
-		</div>
+		</div> 
+
 	</div>
 </div>
 
