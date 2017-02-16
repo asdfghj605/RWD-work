@@ -691,7 +691,7 @@ a:hover{
 	/* overflow:hidden; 先把他尋覽列藏起來*/
 		overflow:hidden;
 		transition: max-height 1.5s;
-		position:absolute;
+		position:fixed;
 	    margin:0;
 	 /*header 80px+1px boder 線條*/
 	    top:60px;
@@ -1030,7 +1030,7 @@ a:hover{
 
 
 	.nav-justified{
-		position: absolute;
+		position: fixed;
 		top:60px;
 	}
 
